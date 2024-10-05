@@ -1,0 +1,230 @@
+html {
+	position: relative;
+}
+
+
+body {
+	margin-bottom: 100px;
+}
+
+
+.jumbotron{
+	min-height: 100px;
+	background-image: url('../img/bg-jumbotron-parallax.png');
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: 0 - 100px;
+	position: relative;
+}
+
+
+.jumbotron .container {
+	margin-top: 100px;
+	z-index: 1;
+	position: relative;
+	height: 450px;
+}
+
+
+.jumbotron img {
+	border: 3px solid #7737f6;
+	width: 40%;
+}
+
+
+.jumbotron h1 {
+	font-size: 32px;
+	color: #fff;
+}
+
+
+.jumbotron p {
+	font-size: 16px;
+	color: #7737f6;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+
+.jumbotron::after {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 75%;
+	background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0) );
+	position: absolute;
+	bottom: 0;
+}
+
+
+.navbar {
+	position: fixed;
+	z-index: 1;
+}
+
+
+.navbar-brand, .nav-link {
+	color: #fed489 !important;
+	font-size: 22px;
+	margin-left: 10px;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+}
+
+
+.nav-link {
+	color: #fed489 !important;
+	font-size: 18px;
+	margin-right: 10px;
+}
+
+
+.portofolio {
+	min-height: 300px;
+	margin-top: 200px;
+}
+
+
+.contact {
+	min-height: 700px;
+	margin-top: 100px;
+	margin-left: 60px;
+	margin-right: 60px;
+}
+
+
+.form-group	{
+	font-size: 16px;
+}
+
+
+.form-group .form-control {
+	font-size: 14px;
+}
+
+.form-control {
+	font-size: 14px;
+}
+
+
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 120px;
+	background-color: #333;
+	padding-top: 20px;
+}
+
+
+footer p {
+	color: #fff;
+	font-size: 0.9em;
+}
+
+
+.portfolio img {
+	column-count: 4;
+	padding-top: 40px;
+	margin-right: 20px;
+	height: 500px;
+}
+
+
+
+
+	/****************************** DESKTOP ******************************/ 
+
+@media (min-width: 992px) {
+	
+	.about {
+		min-height: 500px;
+		margin-top: 50px;
+	}
+	
+	
+	hr {
+		width: 200px;
+		border-top: 3px solid #fed489;
+	}
+	
+	
+	.jumbotron .container {
+		margin-top: 50px;
+		z-index: 1;
+		position: relative;
+		height: 450px;
+	}
+
+
+	.jumbotron img {
+		border: 3px solid #7737f6;
+		width: 30%;
+	}
+
+
+	.jumbotron h1 {
+		font-size: 40px;
+		color: #fff;
+		text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+	}
+	
+	
+	.jumbotron p {
+		font-size: 20px;
+		color: #7737f6;
+		text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+	}
+
+
+	.portofolio {
+		min-height: 600px;
+	}
+	
+	
+	.contact {
+		min-height: 800px;
+	}
+	
+
+	.form-group	{
+		font-size: 18px;
+	}
+	
+	
+	.form-group .form-control {
+		font-size: 16px;
+	}
+
+
+	.navbar-brand, .nav-link {
+		color: #fed489 !important;
+		font-size: 22px;
+		margin-left: 10px;
+		text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+	}
+	
+	
+	.nav-link {
+		color: #fed489 !important;
+		font-size: 18px;
+		margin-right: 10px;
+	}
+
+
+	.nav-link:hover::after {
+		content: '';
+		display: block;
+		border-bottom: 3px solid #7737f6;
+		width: 50%;
+		margin: auto;
+		padding-bottom: 3px;
+		margin-bottom: -6px;
+	}
+
+	.portfolio img {
+        column-count: 4;
+        padding-top: 40px;
+        margin-right: 100px;
+		margin-bottom: 50px;
+        height: 1000px;
+    }
+}
